@@ -1,8 +1,8 @@
 ## ChatBot with LLMs
 
-<img width="1174" alt="Screenshot 2024-01-29 at 3 55 38 PM" src="public/deepseek-r1.png">
-<img width="1174" alt="Screenshot 2024-01-29 at 3 55 38 PM" src="public/llama2.png">
-<img width="1174" alt="Screenshot 2024-01-29 at 3 55 38 PM" src="public/mistral.png">
+<img width="80%" alt="Screenshot 2024-01-29 at 3 55 38 PM" src="public/deepseek-r1.png">
+<img width="80%" alt="Screenshot 2024-01-29 at 3 55 38 PM" src="public/llama2.png">
+<img width="80%" alt="Screenshot 2024-01-29 at 3 55 38 PM" src="public/mistral.png">
 
 ### How to run the app
 
