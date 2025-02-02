@@ -1,0 +1,53 @@
+# macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Virtual environments
+venv/
+.env/
+.pipenv/
+
+# Python compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Logs and temporary files
+logs/
+*.log
+*.out
+*.err
+nohup.out
+
+# Environment and dependency files
+.env
+.venv/
+Pipfile
+Pipfile.lock
+
+# IDE/editor-specific files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Ignore data and output files
+*.csv
+*.sqlite
+*.db
+*.h5
+*.parquet
+*.feather
+*.pkl
+*.joblib
+
+# Ignore large files and cache
+__pycache__/
+*.pyc
+*.pyo
+*.cache/
+*.bak
