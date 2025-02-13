@@ -64,17 +64,17 @@
             - top part of the card
             - shows logo and "LLM chatbot" as a title
             -->
-            <div class="card-header msg_head">
+            <div class="card-header card_head">
               <div class="d-flex bd-highlight">
-                <div class="img_cont">
+                <div class="header_container_size">
                   <img
                     src="https://llama-chatbot-kobro.s3.us-east-1.amazonaws.com/llama.png"
-                    class="rounded-circle user_img"
+                    class="rounded-circle llama_icon"
                   />
                 </div>
-                <div class="user_info">
-                  <span>LLM chatbot</span>
-                  <p>Enter your question below, use good promt!</p>
+                <div class="llama_info">
+                  <span>Llama2 chatbot</span>
+                  <p>I do Quantitative Analysis ...</p>
                 </div>
               </div>
             </div>
@@ -88,16 +88,19 @@
             - takes user input
             -->
             <div class="card-footer">
+              <!-- Input form to accept user prompt -->
               <form id="messageArea" class="input-group">
                 <input
                   type="text"
                   id="text"
                   name="msg"
-                  placeholder="Type your message..."
+                  placeholder="Enter your prompt ..."
                   autocomplete="off"
                   class="form-control type_msg"
                   required
                 />
+
+                <!-- Send prompt Button -->
                 <div class="input-group-append">
                   <button
                     type="submit"
@@ -115,6 +118,7 @@
     </div>
 
     <script>
+      // scroll to the bottom of the chat container
       function scrollToBottom() {
         var messageBody = document.getElementById("messageFormeight");
         messageBody.scrollTop = messageBody.scrollHeight;
@@ -133,26 +137,36 @@
             rawText +
             '<span class="msg_time_send">' +
             str_time +
-            '</span></div><div class="img_cont_msg"><img src="https://i.ibb.co/d5b84Xw/Untitled-design.png" class="rounded-circle user_img_msg"></div></div>';
+            '</span></div><div class="img_cont_msg"><img src="https://i.ibb.co/d5b84Xw/Untitled-design.png" class="rounded-circle user_icon_msg"></div></div>';
 
+          // Clear the input field after sending the message
           $("#text").val("");
+
+          // Append the user message to the chat container
           $("#messageFormeight").append(userHtml);
 
+          // Scroll to the latest message
           scrollToBottom();
 
+          // Send the user message to the server using AJAX
           $.ajax({
             data: {
-              msg: rawText,
+              msg: rawText, // Pass the message as a key-value pair
             },
-            type: "POST",
-            url: "/get",
+            type: "POST", // Use POST request to send data
+            url: "/get", // Server endpoint that processes the request
           }).done(function (data) {
+            // Construct the HTML structure for the bot's response
             var botHtml =
-              '<div class="d-flex justify-content-start mb-4"><div class="img_cont_msg"><img src="https://llama-chatbot-kobro.s3.us-east-1.amazonaws.com/llama.png" class="rounded-circle user_img_msg"></div><div class="msg_cotainer">' +
-              data +
+              '<div class="d-flex justify-content-start mb-4">' + // Align message to the left
+              '<div class="img_cont_msg">' + //Bot profile picture
+              '<img src="https://llama-chatbot-kobro.s3.us-east-1.amazonaws.com/llama.png" class="rounded-circle user_icon_msg">' + //
+              "</div>" +
+              '<div class="msg_cotainer">' +
+              data + // Bot Response Text
               '<span class="msg_time_response">' +
               str_time +
-              "</span></div></div>";
+              "</span></div></div>"; // Display message timestamp
             $("#messageFormeight").append($.parseHTML(botHtml));
             scrollToBottom();
           });
