@@ -1,7 +1,9 @@
+
+/* Background color  */
 body,html{
 	height: 100%;
 	margin: 0;
-	background: rgb(34, 39, 42);
+	background: rgb(222, 235, 230);
 
 }
 
@@ -11,12 +13,77 @@ body,html{
 	margin-bottom: auto;
 }
 
-/* card height, curviiness of the edge and background*/
-.card{
+/* container contains the chat window */
+.container{
+	align-content: center;
+}
+
+
+
+/* CONTAINER CARD */
+
+/* card head */
+.card_head{
+	position: relative;
+}
+
+/* card - contins header ad footer*/
+/* .card{
 	height: 1px;
 	border-radius: 40px !important;
-	background-color: rgba(177, 192, 176, 0.4) !important;
+	background-color: rgba(236, 18, 200) !important;
+} */
+
+
+
+
+
+/* TOP SECTION 
+
+	- LLAMA Icon
+	- LLM Title
+	- Sub-Title
+
+*/
+
+
+/* header container contains llama icon and LLM Title and subtitle  */
+.header_container_size{
+	position: relative;
+	height: 70px;
+	width: 70px;
 }
+
+/* llama icon - surrounding ribbon */
+.llama_icon{
+	height: 70px;
+	width: 70px;
+	border:5px solid #70f970;
+
+}
+
+/* llama info: Title and sub-title */
+.llama_info{
+	margin-top: auto;
+	margin-bottom: auto;
+	margin-left: 15px;
+}
+.llama_info span{
+	font-size: 20px;
+	color: rgb(0, 0, 0);
+}
+.llama_info p{
+	font-size: 10px;
+	color: rgba(0,0,0,0.6);
+}
+
+
+
+
+
+
+
+
 /* .contacts_body{
 	padding:  0.75rem 0 !important;
 	overflow-y: auto;
@@ -31,29 +98,31 @@ body,html{
 } */
 
 
+
+
+
+
+/* FOOTER SECTION 
+
+	- input form 
+	- input text
+	- send button
+	- shadowy effect surrounding the input form
+
+*/
+
+
+/* shadowy effect surrounding the input form */
 .card-footer{
-border-radius: 0 0 15px 15px !important;
-	border-top: 0 !important;
-}
-
-
-.container{
-	align-content: center;
-}
-.search{
-	border-radius: 15px 0 0 15px !important;
-	background-color: rgba(0,0,0,0.3) !important;
-	border:0 !important;
-	color:white !important;
-}
-.search:focus{
-	 box-shadow:none !important;
-   outline:0px !important;
-}
+	border-radius: 0px 0px 225px 225px !important;
+		border-top: 0 !important;
+	}
+	
+/* type message font color*/
 .type_msg{
 	background-color: rgba(0,0,0,0.3) !important;
 	border:0 !important;
-	color:white !important;
+	color:rgb(0, 0, 0) !important;
 	height: 60px !important;
 	overflow-y: auto;
 }
@@ -61,13 +130,8 @@ border-radius: 0 0 15px 15px !important;
 	 box-shadow:none !important;
    outline:0px !important;
 }
-.attach_btn{
-	border-radius: 15px 0 0 15px !important;
-	background-color: rgba(0,0,0,0.3) !important;
-	border:0 !important;
-	color: white !important;
-	cursor: pointer;
-}
+
+/* SEND Button - Ponted */
 .send_btn{
 	border-radius: 0 15px 15px 0 !important;
 	background-color: rgba(0,0,0,0.3) !important;
@@ -75,121 +139,101 @@ border-radius: 0 0 15px 15px !important;
 	color: white !important;
 	cursor: pointer;
 }
-.search_btn{
-	border-radius: 0 15px 15px 0 !important;
-	background-color: rgba(0,0,0,0.3) !important;
-	border:0 !important;
-	color: white !important;
-	cursor: pointer;
-}
-.contacts{
-	list-style: none;
-	padding: 0;
-}
-.contacts li{
-	width: 100% !important;
-	padding: 5px 10px;
-	margin-bottom: 15px !important;
-}
-.active{
-	background-color: rgba(0,0,0,0.3);
-}
-.user_img{
-	height: 70px;
-	width: 70px;
-	border:1.5px solid #f5f6fa;
 
-}
-.user_img_msg{
+
+
+
+/* MIDDLE SECTION - CHAT DIALOG */
+
+/* resize icon  image in the chat */
+.user_icon_msg{
 	height: 40px;
 	width: 40px;
 	border:1.5px solid #f5f6fa;
 
 }
-.img_cont{
-	position: relative;
-	height: 70px;
-	width: 70px;
-}
+
 .img_cont_msg{
 	height: 40px;
 	width: 40px;
 }
-.online_icon{
-	position: absolute;
-	height: 15px;
-	width:15px;
-	background-color: #4cd137;
-	border-radius: 50%;
-	bottom: 0.2em;
-	right: 0.4em;
-	border:1.5px solid white;
-}
-.offline{
-	background-color: #c23616 !important;
-}
-.user_info{
-	margin-top: auto;
-	margin-bottom: auto;
-	margin-left: 15px;
-}
-.user_info span{
-	font-size: 20px;
-	color: white;
-}
-.user_info p{
-	font-size: 10px;
-	color: rgba(255,255,255,0.6);
-}
-.video_cam{
-	margin-left: 50px;
-	margin-top: 5px;
-}
-.video_cam span{
-	color: white;
-	font-size: 20px;
-	cursor: pointer;
-	margin-right: 20px;
-}
+
+
+/* message dialoge view - receive  */
 .msg_cotainer{
 	margin-top: auto;
 	margin-bottom: auto;
 	margin-left: 10px;
-	border-radius: 5px;
-	background-color: rgb(138, 160, 180);
-	padding: 10px;
-	position: relative;
-}
-.msg_cotainer_send{
-	margin-top: auto;
-	margin-bottom: auto;
-	margin-right: 10px;
-	border-radius: 5px;
-	background-color: rgb(19, 190, 170);
+	border-radius: 10px;
+	background-color: rgb(175, 211, 245);
 	padding: 10px;
 	position: relative;
 }
 
-/* position of Response time HH:MM */
-.msg_time_response{
-	position: absolute;
-	left: 0;
-	bottom: -20px;
-	color: rgba(255,255,255,0.5);
-	font-size: 3px;
+/* message dialoge view - send  */
+.msg_cotainer_send{
+	margin-top: auto;
+	margin-bottom: auto;
+	margin-right: 10px;
+	border-radius: 10px;
+	background-color: rgb(187, 243, 166);
+	padding: 10px;
+	position: relative;
 }
+
 
 /* position of query send time HH:MM */
 .msg_time_send{
 	position: absolute;
 	right:0;
 	bottom: -20px;
-	color: rgba(255,255,255,0.5);
-	font-size: 3px;
+	color: rgba(0, 0, 0, 0.5);
+	font-size: x-small;
 }
-.msg_head{
-	position: relative;
+/* position of Response time HH:MM */
+.msg_time_response{
+	position: absolute;
+	left: 0;
+	bottom: -20px;
+	color: rgba(0, 0, 0, 0.5);
+	font-size: xx-small;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #action_menu_btn{
 	position: absolute;
 	right: 10px;
@@ -231,3 +275,50 @@ border-radius: 0 0 15px 15px !important;
 	margin-bottom: 15px !important;
 }
 }
+
+
+
+
+
+
+
+
+/* .attach_btn{
+	border-radius: 15px 0 0 15px !important;
+	background-color: rgba(0,0,0,0.3) !important;
+	border:0 !important;
+	color: white !important;
+	cursor: pointer;
+} */
+
+/* .search{
+	border-radius: 15px 0 0 15px !important;
+	background-color: rgba(0,0,0,0.3) !important;
+	border:0 !important;
+	color:white !important;
+}
+.search:focus{
+	 box-shadow:none !important;
+   outline:0px !important;
+} */
+
+/* .search_btn{
+	border-radius: 0 15px 15px 0 !important;
+	background-color: rgba(0,0,0,0.3) !important;
+	border:0 !important;
+	color: white !important;
+	cursor: pointer;
+} */
+/* .contacts{
+	list-style: none;
+	padding: 0;
+}
+.contacts li{
+	width: 100% !important;
+	padding: 5px 10px;
+	margin-bottom: 15px !important;
+} */
+/* .active{
+	background-color: rgba(0,0,0,0.3);
+} */
+
