@@ -1,67 +1,55 @@
-# from flask import Flask, render_template, request, jsonify, session
-# import requests
-# import json
-
-# app = Flask(__name__)
-# app.secret_key = "supersecretkey"  # Required for session management
-
-# # Set up the base URL for the local Ollama API
-# OLLAMA_API = "http://localhost:11434/api/chat"
-
-# # Define Model NAME [mistral, deepseek-r1, llama2]
-# MODEL_NAME = "llama2"
+from flask import Flask, render_template, request
+from modules.genericResponse import get_Chat_response_generic
+# from modules.formattedResponse import get_Chat_response_formatted
+# from modules.responseOnly import get_Chat_response_only
 
 
-# @app.route("/")
-# def index():
-#     return render_template('chat.html')
+from flask import Flask, render_template, request, jsonify
+from modules.genericResponse import get_Chat_response_generic
+
+app = Flask(__name__)
+
+# Set up the base URL for the local Ollama API
+OLLAMA_API = "http://localhost:11434/api/chat"
+
+# Define Model NAME [mistral, deepseek-r1, llama2]
+MODEL_NAME = "llama2"
 
 
-# @app.route("/get", methods=["POST"])
-# def chat():
-#     msg = request.form["msg"]
-
-#     # Ensure session chat history is initialized
-#     if "chat_history" not in session:
-#         session["chat_history"] = [
-#             {"role": "system", "content": "You are a helpful AI assistant."}]
-
-#     # Append user message to history
-#     session["chat_history"].append({"role": "user", "content": msg})
-
-#     # Generate AI response
-#     ai_response = get_chat_response(
-#         session["chat_history"], MODEL_NAME, OLLAMA_API)
-
-#     # Append AI response to history
-#     session["chat_history"].append(
-#         {"role": "assistant", "content": ai_response})
-#     session.modified = True  # Ensure session is updated
-
-#     return jsonify({"response": ai_response})  # Return JSON response
+def enhance_prompt(user_input, model_name):
+    """
+    Enhances the user input prompt to guide the model towards a professional, quantitative, and CSV formatted response.
+    """
+    enhanced_prompt = (
+        f"You are an expert in this domain. Please provide a detailed, quantitative response to the following query. "
+        f"Ensure the output is in CSV format with clear, comma-separated values.\n\n"
+        f"Query: {user_input}\n"
+        f"Generate multiple variations of the response and combine them for a comprehensive result."
+    )
+    return enhanced_prompt
 
 
-# def get_chat_response(chat_history, model_name, ollama_api):
-#     try:
-#         payload = {
-#             "model": model_name,
-#             "messages": chat_history  # Send full conversation history
-#         }
-
-#         response = requests.post(ollama_api, json=payload)
-
-#         if response.status_code != 200:
-#             return f"Error: Failed to fetch response from Ollama (Status: {response.status_code})"
-
-#         json_data = response.json()
-#         if "message" in json_data and "content" in json_data["message"]:
-#             return json_data["message"]["content"]
-
-#         return "Error: No valid response received."
-
-#     except Exception as e:
-#         return f"Error: {str(e)}"
+@app.route("/")
+def index():
+    return render_template('chat.html')
 
 
-# if __name__ == '__main__':
-#     app.run(debug=True, port=5000)
+@app.route("/get", methods=["GET", "POST"])
+def chat():
+    user_input = request.form["msg"]
+
+    # Display raw input message for debugging
+    print("Input message:", user_input, "\n\n")
+
+    # Enhance the prompt
+    enhanced_input = enhance_prompt(user_input, MODEL_NAME)
+
+    # Get response from the model
+    response = get_Chat_response_generic(
+        enhanced_input, MODEL_NAME, OLLAMA_API)
+
+    return jsonify(response)
+
+
+if __name__ == '__main__':
+    app.run(debug=True, port=5000)

@@ -16,6 +16,8 @@ def get_Chat_response_only(input, MODEL_NAME, OLLAMA_API_URL):
             return jsonify({"error": "Failed to fetch response from Ollama", "status": response.status_code}), response.status_code
 
         def generate():
+
+            new_list = []
             for line in response.iter_lines(decode_unicode=True):
                 if line:
 
@@ -35,6 +37,7 @@ def get_Chat_response_only(input, MODEL_NAME, OLLAMA_API_URL):
 
                         if not in_think_block and token:
                             print(token)  # Debugging
+                            new_list.append(token.strip())
                             yield token  # Stream only valid output
 
                         # if "message" in json_data and "content" in json_data["message"]:
@@ -45,6 +48,7 @@ def get_Chat_response_only(input, MODEL_NAME, OLLAMA_API_URL):
                             # yield token
                     except json.JSONDecodeError:
                         yield f"\nFailed to parse line: {line}"
+            print(new_list)
 
         return Response(generate(), content_type='text/plain')
 
