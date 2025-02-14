@@ -1,0 +1,27 @@
+[
+    {
+        "Airline": "Delta",
+        "Flight_Number": "DL123",
+        "Carbon_Footprint_kgCO2": 250
+    },
+    {
+        "Airline": "United",
+        "Flight_Number": "UA456",
+        "Carbon_Footprint_kgCO2": 270
+    },
+    {
+        "Airline": "American Airlines",
+        "Flight_Number": "AA789",
+        "Carbon_Footprint_kgCO2": 300
+    },
+    {
+        "Airline": "Southwest",
+        "Flight_Number": "SW567",
+        "Carbon_Footprint_kgCO2": 240
+    },
+    {
+        "Airline": "JetBlue",
+        "Flight_Number": "JL890",
+        "Carbon_Footprint_kgCO2": 260
+    }
+]
