@@ -3,7 +3,7 @@
 body,html{
 	height: 100%;
 	margin: 0;
-	background: rgb(222, 235, 230);
+	background: rgb(255, 255, 255);
 
 }
 
@@ -25,14 +25,16 @@ body,html{
 /* card head */
 .card_head{
 	position: relative;
+	background-color: #fdfdfd;
 }
 
 /* card - contins header ad footer*/
-/* .card{
+.card{
 	height: 1px;
+	width: 100%;
 	border-radius: 40px !important;
-	background-color: rgba(236, 18, 200) !important;
-} */
+	
+}
 
 
 
@@ -118,12 +120,12 @@ body,html{
 		border-top: 0 !important;
 	}
 	
-/* type message font color*/
+/* input message text area & settings */
 .type_msg{
 	background-color: rgba(0,0,0,0.3) !important;
 	border:0 !important;
 	color:rgb(0, 0, 0) !important;
-	height: 60px !important;
+	height: 100px !important;
 	overflow-y: auto;
 }
 	.type_msg:focus{
