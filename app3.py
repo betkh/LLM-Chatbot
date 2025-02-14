@@ -49,7 +49,7 @@ def get_chat_context():
 
 
 # Define the output file for extracted JSON data
-EXTRACTED_JSON_FILE = "extracted_emissions_data.json"
+EXTRACTED_JSON_FILE = "extracted_data.json"
 
 
 def extract_json_from_bot_response(bot_response):
