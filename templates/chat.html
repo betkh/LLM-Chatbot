@@ -90,7 +90,7 @@
             <div class="card-footer">
               <!-- Input form to accept user prompt -->
               <form id="messageArea" class="input-group">
-                <input
+                <textarea
                   type="text"
                   id="text"
                   name="msg"
@@ -98,7 +98,7 @@
                   autocomplete="off"
                   class="form-control type_msg"
                   required
-                />
+                ></textarea>
 
                 <!-- Send prompt Button -->
                 <div class="input-group-append">
@@ -117,14 +117,35 @@
       </div>
     </div>
 
+    <!-- Include Marked.js for Markdown Parsing -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
     <script>
-      // scroll to the bottom of the chat container
+      // Scroll to the bottom of the chat container
       function scrollToBottom() {
         var messageBody = document.getElementById("messageFormeight");
         messageBody.scrollTop = messageBody.scrollHeight;
       }
 
+      // Clear the conversation history when the page loads
+      function clearConversationHistory() {
+        $.ajax({
+          url: "/clear",
+          type: "GET",
+          success: function (data) {
+            console.log("Conversation cleared:", data.status);
+          },
+          error: function (error) {
+            console.error("Error clearing conversation:", error);
+          },
+        });
+      }
+
       $(document).ready(function () {
+        // Clear the conversation history on page load
+        clearConversationHistory();
+
+        // Handle the chat form submission
         $("#messageArea").on("submit", function (event) {
           const date = new Date();
           const hour = date.getHours();
@@ -144,32 +165,35 @@
 
           // Append the user message to the chat container
           $("#messageFormeight").append(userHtml);
-
-          // Scroll to the latest message
-          scrollToBottom();
+          scrollToBottom(); // Scroll to latest message
 
           // Send the user message to the server using AJAX
           $.ajax({
-            data: {
-              msg: rawText, // Pass the message as a key-value pair
-            },
-            type: "POST", // Use POST request to send data
-            url: "/get", // Server endpoint that processes the request
+            data: { msg: rawText },
+            type: "POST",
+            url: "/get",
           }).done(function (data) {
-            // Construct the HTML structure for the bot's response
+            console.log("Bot Response:", data); // Debugging to check response format
+
+            // Convert Markdown to HTML using marked.js
+            var formattedResponse = marked.parse(data);
+
+            // Construct the bot response HTML
             var botHtml =
-              '<div class="d-flex justify-content-start mb-4">' + // Align message to the left
-              '<div class="img_cont_msg">' + //Bot profile picture
-              '<img src="https://llama-chatbot-kobro.s3.us-east-1.amazonaws.com/llama.png" class="rounded-circle user_icon_msg">' + //
+              '<div class="d-flex justify-content-start mb-4">' +
+              '<div class="img_cont_msg">' +
+              '<img src="https://llama-chatbot-kobro.s3.us-east-1.amazonaws.com/llama.png" class="rounded-circle user_icon_msg">' +
               "</div>" +
               '<div class="msg_cotainer">' +
-              data + // Bot Response Text
+              formattedResponse + // Inject properly formatted response
               '<span class="msg_time_response">' +
               str_time +
-              "</span></div></div>"; // Display message timestamp
+              "</span></div></div>";
+
             $("#messageFormeight").append($.parseHTML(botHtml));
             scrollToBottom();
           });
+
           event.preventDefault();
         });
       });
