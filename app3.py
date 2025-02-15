@@ -5,6 +5,8 @@ import matplotlib.pyplot as plt
 import pandas as pd
 from flask import Flask, Response, send_file, jsonify, render_template, request
 
+CHAT_HISTORY_FILE = "chat_history.json"
+
 
 def load_chat_history():
     """ Loads chat history from the JSON file. """
@@ -45,11 +47,9 @@ def get_chat_context():
         formatted_context.append(
             {"role": "assistant", "content": f"Bot: {entry['Bot']}"})
 
+    print(formatted_context)
+
     return formatted_context
-
-
-# Define the output file for extracted JSON data
-EXTRACTED_JSON_FILE = "extracted_data.json"
 
 
 def extract_json_from_bot_response(bot_response):
@@ -104,6 +104,16 @@ def save_extracted_data(bot_response):
     return extracted_data
 
 
+def load_prompt_patterns():
+    """Loads prompt patterns from the JSON file."""
+    try:
+        with open(PROMPT_PATTERNS_FILE, "r") as file:
+            return json.load(file)
+    except (FileNotFoundError, json.JSONDecodeError) as e:
+        print(f"Error loading prompt patterns: {e}")
+        return {}
+
+
 def get_Chat_response_only(input_text, MODEL_NAME, OLLAMA_API_URL):
     """
     Sends user input to Ollama API, including chat history for context.
@@ -113,6 +123,9 @@ def get_Chat_response_only(input_text, MODEL_NAME, OLLAMA_API_URL):
     """
     try:
         context = get_chat_context()  # Retrieve conversation history
+        print("This is chat history below: \n", context)
+
+        print("\n This is chat history above: \n")
 
         # Append new user input to the context
         context.append({"role": "user", "content": input_text})
@@ -173,10 +186,18 @@ app = Flask(__name__)
 
 # Set up the base URL for the local Ollama API
 OLLAMA_API = "http://localhost:11434/api/chat"
-MODEL_NAME = "deepseek-r1"
-CHAT_HISTORY_FILE = "chat_history.json"
-CSV_OUTPUT_FILE = "extracted_data.csv"
+MODEL_NAME = "llama2"
+# MODEL_NAME = "mistral"
+# MODEL_NAME = "deepseek-r1"
+# MODEL_NAME = "deepseek-r1:32b"
+
+# Define the output file for extracted JSON data
+EXTRACTED_JSON_FILE = "extracted_data.json"
 CONTEXT_LIMIT = 5  # Number of previous interactions to include in context
+
+
+# Load the prompt patterns from the JSON file
+PROMPT_PATTERNS_FILE = "prompt_patterns.json"
 
 
 @app.route("/")
