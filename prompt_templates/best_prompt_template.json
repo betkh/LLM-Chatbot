@@ -1,0 +1,29 @@
+{
+    "prompt_template": "List down gift items for {occasion} and corresponding carbon footprint and price. Use the following format: {output_format}",
+    "output_format": [
+        {
+            "Occasion": "Birthday",
+            "Gift_Item": "Plastic Toy",
+            "Carbon_Footprint_kgCO2": "value",
+            "Price_USD": "value"
+        },
+        {
+            "Occasion": "Birthday",
+            "Gift_Item": "Book",
+            "Carbon_Footprint_kgCO2": "value",
+            "Price_USD": "value"
+        },
+        {
+            "Occasion": "Birthday",
+            "Gift_Item": "Clothing",
+            "Carbon_Footprint_kgCO2": "value",
+            "Price_USD": "value"
+        },
+        {
+            "Occasion": "Birthday",
+            "Gift_Item": "Electronics",
+            "Carbon_Footprint_kgCO2": "value",
+            "Price_USD": "value"
+        }
+    ]
+}

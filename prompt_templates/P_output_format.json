@@ -1,0 +1,13 @@
+[
+    {
+    "Transportation_Type": "Flight", 
+    "Description": "Domestic flight (short-haul)", 
+    "Average_Carbon_Footprint_kgCO2_per_passenger_km": 0.25
+    },
+    {"Transportation_Type": "Flight", "Description": "International flight (long-haul)", "Average_Carbon_Footprint_kgCO2_per_passenger_km": 0.15},
+    {"Transportation_Type": "Bus", "Description": "Local bus (diesel)", "Average_Carbon_Footprint_kgCO2_per_passenger_km": 0.10},
+    {"Transportation_Type": "Bus", "Description": "Electric bus", "Average_Carbon_Footprint_kgCO2_per_passenger_km": 0.05},
+    {"Transportation_Type": "Train", "Description": "High-speed train (electric)", "Average_Carbon_Footprint_kgCO2_per_passenger_km": 0.03},
+    {"Transportation_Type": "Driving_Private_Car", "Description": "Gasoline car", "Average_Carbon_Footprint_kgCO2_per_passenger_km": 0.20},
+    {"Transportation_Type": "Driving_Private_Car", "Description": "Electric car", "Average_Carbon_Footprint_kgCO2_per_passenger_km": 0.06}
+]

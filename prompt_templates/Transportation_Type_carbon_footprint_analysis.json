@@ -1,0 +1,8 @@
+{
+    "description": "Generates estimated CO2 emissions for transportation methods.",
+    "prompt": "You are an AI assistant specializing in carbon footprint analysis...",
+    "format": [
+        {"Transportation_Type": "Flight", "Description": "Domestic flight (short-haul)", "Average_Carbon_Footprint_kgCO2_per_passenger_km": 0.25},
+        {"Transportation_Type": "Bus", "Description": "Local bus (diesel)", "Average_Carbon_Footprint_kgCO2_per_passenger_km": 0.10}
+    ]
+}
