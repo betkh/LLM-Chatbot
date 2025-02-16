@@ -21,6 +21,7 @@ from sklearn.metrics.pairwise import cosine_similarity
     - context set up for follow up questions ( upto 5 previous chats)
     - tracking chat history 
     - data extraction from response
+    - ignored think block
 
 
 
@@ -36,6 +37,8 @@ Front End:
 
     - ***Top Priority Feature***: 
         - render data viz into front end page (+ some description)
+        - generate the embedding vector for each prompt pattern and store it (avoid re-generating)
+        - add each prompt pattern to its own separate file
 
     
     - show user icon = my pic, find better LAMA ICON
@@ -50,7 +53,7 @@ Front End:
         - tabular formats 
 
 
-__________git c
+__________
 Back End:
 ----------
     - ***Top Priority Feature***: 
