@@ -8,6 +8,26 @@ from sklearn.metrics.pairwise import cosine_similarity
 
 
 """
+-----------------------------
+------------DONE-------------
+-----------------------------
+
+    - proptotying with :
+        - various models 
+        - LLM interaction approaches (langchain, OLAMA, API requests)
+    - prompt engineering with patterns
+    - dyanamically selecting the best  prompt handling 
+    - accepting user prompt and enriching it
+    - context set up for follow up questions ( upto 5 previous chats)
+    - tracking chat history 
+    - data extraction from response
+
+
+
+
+
+
+
 TO DOs:
 
 __________
@@ -30,7 +50,7 @@ Front End:
         - tabular formats 
 
 
-__________
+__________git c
 Back End:
 ----------
     - ***Top Priority Feature***: 
@@ -50,6 +70,12 @@ _____________
 Documentation:
 -------------
     - report paper
+    - Block Diagrams:
+        - high level architecture 
+        - prompt engineering & user input text processing using embedding and cosine similarity
+        - front end structural architecture
+        - front end behavoral architecture (JS)
+        - back-end structural oraganization
     - code comments 
     - github documents
 
@@ -61,6 +87,7 @@ Nice To have
     - DAG it (Automate Data work/flow)
     - AI based prompt engineeing (custom prompts automatically) 
     - host it (blabla.com)
+
 
 """
 
