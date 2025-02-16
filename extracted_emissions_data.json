@@ -1,27 +1,52 @@
 [
     {
-        "Airline": "Delta",
-        "Flight_Number": "DL123",
-        "Carbon_Footprint_kgCO2": 250
+        "State": "California",
+        "Year": "2024",
+        "Total_CO2_Emissions_metric_tons": 1350000
     },
     {
-        "Airline": "United",
-        "Flight_Number": "UA456",
-        "Carbon_Footprint_kgCO2": 270
+        "State": "Texas",
+        "Year": "2020",
+        "Total_CO2_Emissions_metric_tons": 890000
     },
     {
-        "Airline": "American Airlines",
-        "Flight_Number": "AA789",
-        "Carbon_Footprint_kgCO2": 300
+        "State": "Florida",
+        "Year": "2023",
+        "Total_CO2_Emissions_metric_tons": 750000
     },
     {
-        "Airline": "Southwest",
-        "Flight_Number": "SW567",
-        "Carbon_Footprint_kgCO2": 240
+        "State": "New York",
+        "Year": "2024",
+        "Total_CO2_Emissions_metric_tons": 1080000
     },
     {
-        "Airline": "JetBlue",
-        "Flight_Number": "JL890",
-        "Carbon_Footprint_kgCO2": 260
+        "State": "Pennsylvania",
+        "Year": "2022",
+        "Total_CO2_Emissions_metric_tons": 690000
+    },
+    {
+        "State": "Illinois",
+        "Year": "2023",
+        "Total_CO2_Emissions_metric_tons": 780000
+    },
+    {
+        "State": "Ohio",
+        "Year": "2021",
+        "Total_CO2_Emissions_metric_tons": 560000
+    },
+    {
+        "State": "Georgia",
+        "Year": "2020",
+        "Total_CO2_Emissions_metric_tons": 470000
+    },
+    {
+        "State": "North Carolina",
+        "Year": "2024",
+        "Total_CO2_Emissions_metric_tons": 630000
+    },
+    {
+        "State": "Michigan",
+        "Year": "2023",
+        "Total_CO2_Emissions_metric_tons": 510000
     }
 ]
