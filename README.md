@@ -2,13 +2,15 @@
 
 ### Video Demo (click on the image)
 
-[![Watch the video](public/demo.png)](https://www.youtube.com/watch?v=EgKAD9C_Hks)
+[Watch video Demo](https://www.youtube.com/watch?v=EgKAD9C_Hks)
+
+<img width="100%" alt="Screenshot 2024-01-29 at 3 55 38 PM" src="public/demo.png">
 
 #### Output comparison from various models
 
-<img width="80%" alt="Screenshot 2024-01-29 at 3 55 38 PM" src="public/deepseek-r1.png">
+<!-- <img width="80%" alt="Screenshot 2024-01-29 at 3 55 38 PM" src="public/deepseek-r1.png">
 
-<img width="80%" alt="Screenshot 2024-01-29 at 3 55 38 PM" src="public/llama2.png">
+<img width="80%" alt="Screenshot 2024-01-29 at 3 55 38 PM" src="public/llama2.png"> -->
 
 ### How to run the app
 
