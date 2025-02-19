@@ -1,6 +1,8 @@
 ## ChatBot with LLMs
 
-<img width="100%" alt="Screenshot 2024-01-29 at 3 55 38 PM" src="public/demo.png">
+### Video Demo (click on the image)
+
+[![Watch the video](public/demo.png)](https://www.youtube.com/watch?v=EgKAD9C_Hks)
 
 #### Output comparison from various models
 
