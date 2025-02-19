@@ -4,7 +4,7 @@
 
 [Watch video Demo](https://www.youtube.com/watch?v=EgKAD9C_Hks)
 
-<img width="100%" alt="Screenshot 2024-01-29 at 3 55 38 PM" src="public/demo.png">
+<img width="100%" alt="demo.png" src="public/demo.png">
 
 #### Output comparison from various models
 
