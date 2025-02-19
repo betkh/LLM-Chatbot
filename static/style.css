@@ -305,7 +305,15 @@ body,html{
 
 
 
-
+.visualization-link {
+	color: #007bff;
+	text-decoration: underline;
+	cursor: pointer;
+  }
+  
+  .visualization-link:hover {
+	color: #0056b3;
+  }
 
 
 
