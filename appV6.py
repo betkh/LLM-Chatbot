@@ -393,7 +393,7 @@ The response MUST be enclosed within triple backticks (```) and structured EXACT
 
     """
     You are an AI assistant specializing in carbon emission data extraction and analysis across various 
-    gift items which might be guven to people for different occasions.
+    gift items which might be given to people for different occasions.
 
     Your task is to estimate the Total_CO2_Emissions_in_kg for various types of gift items under various categories
     including electronics, fashion, home & living, books, personal care, etc. You must pick the right gift item for 
@@ -418,7 +418,7 @@ The response MUST be enclosed within triple backticks (```) and structured EXACT
 
     
 
-    Ooutput format:
+    Output format:
     The response MUST be enclosed within triple backticks (```) and structured EXACTLY as follows
     while the keys remain fixed the values can be randomized:
     
@@ -519,15 +519,6 @@ pattern_texts = list(PROMPT_PATTERNS.values())
 pattern_embeddings = embedding_model.encode(pattern_texts)
 
 
-def load_chat_history():
-    """ Loads chat history from the JSON file. """
-    try:
-        with open(CHAT_HISTORY_FILE, "r") as file:
-            return json.load(file)
-    except (FileNotFoundError, json.JSONDecodeError):
-        return []  # Return empty list if no history exists
-
-
 def save_chat_history(history):
     """ Saves updated chat history to the JSON file. """
     try:
@@ -535,6 +526,15 @@ def save_chat_history(history):
             json.dump(history, file, indent=4)
     except Exception as e:
         print(f"Error saving chat history: {e}")
+
+
+def load_chat_history():
+    """ Loads chat history from the JSON file. """
+    try:
+        with open(CHAT_HISTORY_FILE, "r") as file:
+            return json.load(file)
+    except (FileNotFoundError, json.JSONDecodeError):
+        return []  # Return empty list if no history exists
 
 
 def get_chat_context():
@@ -594,7 +594,7 @@ def extract_json_from_bot_response(bot_response):
     return None
 
 
-def save_extracted_data(bot_response):
+def export_data(bot_response):
     """
     Extracts and saves structured data from the bot response into a JSON file.
     """
@@ -660,7 +660,7 @@ def get_chat_response(input_text, model_name, api_url):
         history.append({"User": input_text, "Bot": final_response})
         save_chat_history(history)
 
-        save_extracted_data(final_response)
+        export_data(final_response)
 
         return Response(final_response, content_type='text/plain')
 
