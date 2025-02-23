@@ -117,7 +117,6 @@
       </div>
     </div>
 
-    <!-- Include Marked.js for Markdown Parsing -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 
     <script>
@@ -175,22 +174,38 @@
           }).done(function (data) {
             console.log("Bot Response:", data); // Debugging to check response format
 
-            // Convert Markdown to HTML using marked.js
-            var formattedResponse = marked.parse(data);
+            // Split the response into text and visualization parts
+            let [textPart, vizPart] = data.split("\n\n<h3>Visualization:</h3>");
+            if (!vizPart) {
+              textPart = data; // No visualization, use full response as text
+            }
+
+            // Convert text part (if any) to Markdown
+            let formattedText = textPart ? marked.parse(textPart) : "";
 
             // Construct the bot response HTML
-            var botHtml =
+            let botHtml =
               '<div class="d-flex justify-content-start mb-4">' +
               '<div class="img_cont_msg">' +
               '<img src="https://llama-chatbot-kobro.s3.us-east-1.amazonaws.com/Ai_llm_icon.png" class="rounded-circle user_icon_msg">' +
               "</div>" +
-              '<div class="msg_cotainer">' +
-              formattedResponse + // Inject properly formatted response
+              '<div class="msg_cotainer">';
+
+            // Add text part (if any)
+            botHtml += formattedText;
+
+            // Add visualization part (if any) - already HTML, no need for Markdown
+            if (vizPart) {
+              botHtml += vizPart;
+            }
+
+            botHtml +=
               '<span class="msg_time_response">' +
               str_time +
               "</span></div></div>";
 
-            $("#messageFormeight").append($.parseHTML(botHtml));
+            // Append the bot response to the chat container
+            $("#messageFormeight").append(botHtml);
             scrollToBottom();
           });
 
