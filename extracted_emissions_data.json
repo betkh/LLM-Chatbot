@@ -1,52 +1,62 @@
 [
     {
-        "State": "California",
-        "Year": "2024",
-        "Total_CO2_Emissions_metric_tons": 1350000
+        "Gift_Item": "Smartwatch",
+        "Category": "Electronics",
+        "Occasion": "Birthday",
+        "Average_CO2_Footprint_kgCO2": 14
     },
     {
-        "State": "Texas",
-        "Year": "2020",
-        "Total_CO2_Emissions_metric_tons": 890000
+        "Gift_Item": "Organic Cotton T-Shirt",
+        "Category": "Fashion",
+        "Occasion": "Valentine's Day",
+        "Average_CO2_Footprint_kgCO2": 8
     },
     {
-        "State": "Florida",
-        "Year": "2023",
-        "Total_CO2_Emissions_metric_tons": 750000
+        "Gift_Item": "Bamboo Fabric Dress",
+        "Category": "Fashion",
+        "Occasion": "Mother's Day",
+        "Average_CO2_Footprint_kgCO2": 10
     },
     {
-        "State": "New York",
-        "Year": "2024",
-        "Total_CO2_Emissions_metric_tons": 1080000
+        "Gift_Item": "Reusable Coffee Mug",
+        "Category": "Home & Living",
+        "Occasion": "Graduation",
+        "Average_CO2_Footprint_kgCO2": 6
     },
     {
-        "State": "Pennsylvania",
-        "Year": "2022",
-        "Total_CO2_Emissions_metric_tons": 690000
+        "Gift_Item": "Sustainable Cleaning Set",
+        "Category": "Home & Living",
+        "Occasion": "Housewarming",
+        "Average_CO2_Footprint_kgCO2": 12
     },
     {
-        "State": "Illinois",
-        "Year": "2023",
-        "Total_CO2_Emissions_metric_tons": 780000
+        "Gift_Item": "Eucalyptus Candle Set",
+        "Category": "Home & Living",
+        "Occasion": "Thank You",
+        "Average_CO2_Footprint_kgCO2": 5
     },
     {
-        "State": "Ohio",
-        "Year": "2021",
-        "Total_CO2_Emissions_metric_tons": 560000
+        "Gift_Item": "Digital Book",
+        "Category": "Books",
+        "Occasion": "Graduation",
+        "Average_CO2_Footprint_kgCO2": 3
     },
     {
-        "State": "Georgia",
-        "Year": "2020",
-        "Total_CO2_Emissions_metric_tons": 470000
+        "Gift_Item": "Reusable Water Bottle",
+        "Category": "Personal Care",
+        "Occasion": "Birthday",
+        "Average_CO2_Footprint_kgCO2": 7
     },
     {
-        "State": "North Carolina",
-        "Year": "2024",
-        "Total_CO2_Emissions_metric_tons": 630000
+        "Gift_Item": "Bamboo Toothbrush",
+        "Category": "Personal Care",
+        "Occasion": "Valentine's Day",
+        "Average_CO2_Footprint_kgCO2": 4
     },
     {
-        "State": "Michigan",
-        "Year": "2023",
-        "Total_CO2_Emissions_metric_tons": 510000
+        "Gift_Item": "Paperback Book",
+        "Category": "Books",
+        "Occasion": "Father's Day",
+        "Average_CO2_Footprint_kgCO2": 3
     }
 ]
