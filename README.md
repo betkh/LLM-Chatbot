@@ -4,9 +4,25 @@
 
 [Watch video Demo](https://www.youtube.com/watch?v=EgKAD9C_Hks)
 
-<img width="100%" alt="demo.png" src="public/demo.png">
+### Architecture
 
-#### Output comparison from various models
+<img width="100%" alt="demo.png" src="public/archtect.png">
+
+### Query processing
+
+<img width="60%" alt="demo.png" src="public/prompt_selector.png">
+
+### Front-end
+
+<img width="80%" alt="demo.png" src="public/front-end.png">
+
+### Sample Outputs
+
+<img width="100%" alt="demo.png" src="public/ops/op1.png">
+<img width="100%" alt="demo.png" src="public/ops/op2.png">
+<img width="100%" alt="demo.png" src="public/ops/op3.png">
+
+<!-- #### Output comparison from various models -->
 
 <!-- <img width="80%" alt="Screenshot 2024-01-29 at 3 55 38 PM" src="public/deepseek-r1.png">
 
