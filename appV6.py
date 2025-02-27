@@ -53,6 +53,14 @@ Front End:
         - tabular formats 
 
 
+
+- how do I write a listener that will render the response from LLM while my back end is processing to render the imediate response in RT
+- web-socket protocol 
+- constantly poling 
+-  API listening 
+- updating the DOM
+
+
 __________
 Back End:
 ----------
@@ -117,7 +125,14 @@ embedding_model = SentenceTransformer('all-MiniLM-L6-v2')
 # Define structured response patterns
 PROMPT_PATTERNS = {
 
-    "Transportation_Type_carbon_footprint_analysis": """
+    "Transportation_Type_carbon_footprint_analysis":
+
+
+
+    """
+
+
+
         You are an AI assistant specialized in carbon footprint analysis of transportation. 
         Your ONLY task is to provide a structured JSON response containing estimated CO2 emissions 
         (in kg CO2 per passenger km) for different transportation methods. 
@@ -162,6 +177,10 @@ PROMPT_PATTERNS = {
   }
 ]```
     """,
+
+
+
+
     "explanatory_format": """
         You are an AI tutor. Provide a detailed explanation in this format:
 
@@ -169,6 +188,9 @@ PROMPT_PATTERNS = {
         **Explanation**: [Detailed breakdown]
         **Examples**: [Provide real-world examples]
     """,
+
+
+
     "comparative_format": """
         You are an AI assistant specializing in comparisons. Format output as follows:
 
@@ -177,6 +199,9 @@ PROMPT_PATTERNS = {
         - **Key Differences**: [List]
         - **Final Verdict**: [Summarize]
     """,
+
+
+
     "step_by_step_format": """
         You are an AI guide. Always respond in this step-by-step format:
 
