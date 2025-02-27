@@ -1,62 +1,62 @@
 [
     {
-        "Gift_Item": "Smartwatch",
+        "Gift_Item": "Smartphone",
         "Category": "Electronics",
         "Occasion": "Birthday",
-        "Average_CO2_Footprint_kgCO2": 14
+        "Average_CO2_Footprint_kgCO2": 15
     },
     {
-        "Gift_Item": "Organic Cotton T-Shirt",
+        "Gift_Item": "Wireless Earbuds",
+        "Category": "Electronics",
+        "Occasion": "Christmas",
+        "Average_CO2_Footprint_kgCO2": 15
+    },
+    {
+        "Gift_Item": "Designer Handbag",
         "Category": "Fashion",
-        "Occasion": "Valentine's Day",
-        "Average_CO2_Footprint_kgCO2": 8
+        "Occasion": "Anniversary",
+        "Average_CO2_Footprint_kgCO2": 30
     },
     {
-        "Gift_Item": "Bamboo Fabric Dress",
+        "Gift_Item": "Silk Scarf",
         "Category": "Fashion",
         "Occasion": "Mother's Day",
         "Average_CO2_Footprint_kgCO2": 10
     },
     {
-        "Gift_Item": "Reusable Coffee Mug",
-        "Category": "Home & Living",
-        "Occasion": "Graduation",
-        "Average_CO2_Footprint_kgCO2": 6
-    },
-    {
-        "Gift_Item": "Sustainable Cleaning Set",
+        "Gift_Item": "Scented Candle Set",
         "Category": "Home & Living",
         "Occasion": "Housewarming",
-        "Average_CO2_Footprint_kgCO2": 12
+        "Average_CO2_Footprint_kgCO2": 25
     },
     {
-        "Gift_Item": "Eucalyptus Candle Set",
+        "Gift_Item": "Indoor Plant",
         "Category": "Home & Living",
         "Occasion": "Thank You",
         "Average_CO2_Footprint_kgCO2": 5
     },
     {
-        "Gift_Item": "Digital Book",
+        "Gift_Item": "Bestseller Novel",
         "Category": "Books",
         "Occasion": "Graduation",
-        "Average_CO2_Footprint_kgCO2": 3
+        "Average_CO2_Footprint_kgCO2": 10
     },
     {
-        "Gift_Item": "Reusable Water Bottle",
-        "Category": "Personal Care",
-        "Occasion": "Birthday",
-        "Average_CO2_Footprint_kgCO2": 7
+        "Gift_Item": "Cookbook",
+        "Category": "Books",
+        "Occasion": "Wedding",
+        "Average_CO2_Footprint_kgCO2": 15
     },
     {
-        "Gift_Item": "Bamboo Toothbrush",
+        "Gift_Item": "Skincare Set",
         "Category": "Personal Care",
         "Occasion": "Valentine's Day",
-        "Average_CO2_Footprint_kgCO2": 4
+        "Average_CO2_Footprint_kgCO2": 20
     },
     {
-        "Gift_Item": "Paperback Book",
-        "Category": "Books",
+        "Gift_Item": "Perfume",
+        "Category": "Personal Care",
         "Occasion": "Father's Day",
-        "Average_CO2_Footprint_kgCO2": 3
+        "Average_CO2_Footprint_kgCO2": 18
     }
 ]
