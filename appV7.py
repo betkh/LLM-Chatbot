@@ -145,37 +145,37 @@ PROMPT_PATTERNS = {
   {
     "Transportation_Type": "Flight (Domestic)",
     "Description": "Domestic flight (short-haul)",
-    "Average_Carbon_Footprint_kgCO2_per_passenger_km": 0.25
+    "Average_Carbon_Footprint_kgCO2_per_passenger_km": "[numerical_value]"
   },
   {
     "Transportation_Type": "Flight (long-haul)",
     "Description": "International flight (long-haul)",
-    "Average_Carbon_Footprint_kgCO2_per_passenger_km": 0.15
+    "Average_Carbon_Footprint_kgCO2_per_passenger_km": "[numerical_value]"
   },
   {
     "Transportation_Type": "Bus (diesel)",
     "Description": "Local bus (diesel)",
-    "Average_Carbon_Footprint_kgCO2_per_passenger_km": 0.1
+    "Average_Carbon_Footprint_kgCO2_per_passenger_km": "[numerical_value]"
   },
   {
     "Transportation_Type": "Bus (electric)",
     "Description": "Electric bus",
-    "Average_Carbon_Footprint_kgCO2_per_passenger_km": 0.05
+    "Average_Carbon_Footprint_kgCO2_per_passenger_km": "[numerical_value]"
   },
   {
     "Transportation_Type": "Train (electric)",
     "Description": "High-speed train (electric)",
-    "Average_Carbon_Footprint_kgCO2_per_passenger_km": 0.03
+    "Average_Carbon_Footprint_kgCO2_per_passenger_km": "[numerical_value]"
   },
   {
     "Transportation_Type": "Car(Gasoline)",
     "Description": "Gasoline car",
-    "Average_Carbon_Footprint_kgCO2_per_passenger_km": 0.2
+    "Average_Carbon_Footprint_kgCO2_per_passenger_km": "[numerical_value]"
   },
   {
     "Transportation_Type": "Car (electric)",
     "Description": "Electric car",
-    "Average_Carbon_Footprint_kgCO2_per_passenger_km": 0.06
+    "Average_Carbon_Footprint_kgCO2_per_passenger_km": "[numerical_value]"
   }
 ]```
     """,
