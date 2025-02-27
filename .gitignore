@@ -26,8 +26,7 @@ nohup.out
 # Environment and dependency files
 .env
 .venv/
-Pipfile
-Pipfile.lock
+
 
 # IDE/editor-specific files
 .vscode/

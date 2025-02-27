@@ -1,0 +1,25 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+langchain = "*"
+langchain-community = "*"
+requests = "*"
+flask = "*"
+transformers = "*"
+torch = "*"
+sacremoses = "*"
+pandas = "*"
+matplotlib = "*"
+scikit-learn = "*"
+nomic = "*"
+sentence-transformers = "*"
+plotly = "*"
+kaleido = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.11"
