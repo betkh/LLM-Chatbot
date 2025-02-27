@@ -851,13 +851,13 @@ def get_chat_response(input_text, model_name, api_url):
         full_response = []
         in_think_block = False
 
+        print("\n\nOUTPUT TOKENS: \n\n")
         for line in response.iter_lines(decode_unicode=True):
             if line:
                 try:
                     json_data = json.loads(line)
                     token = json_data.get("message", {}).get("content", "")
 
-                    print("\n\nOUTPUT TOKENS \n\n")
                     print(token)
 
                     if "<think>" in token:
@@ -947,4 +947,5 @@ def chat():
 
 
 if __name__ == '__main__':
+    print("Starting Flask app...")
     app.run(debug=True, use_reloader=False, port=5000)

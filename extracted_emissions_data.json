@@ -1,62 +1,52 @@
 [
     {
-        "Gift_Item": "Smartphone",
-        "Category": "Electronics",
-        "Occasion": "Birthday",
-        "Average_CO2_Footprint_kgCO2": 15
+        "State": "California",
+        "Year": "2020",
+        "Total_CO2_Emissions_metric_tons": 395
     },
     {
-        "Gift_Item": "Wireless Earbuds",
-        "Category": "Electronics",
-        "Occasion": "Christmas",
-        "Average_CO2_Footprint_kgCO2": 15
+        "State": "Texas",
+        "Year": "2020",
+        "Total_CO2_Emissions_metric_tons": 213
     },
     {
-        "Gift_Item": "Designer Handbag",
-        "Category": "Fashion",
-        "Occasion": "Anniversary",
-        "Average_CO2_Footprint_kgCO2": 30
+        "State": "California",
+        "Year": "2021",
+        "Total_CO2_Emissions_metric_tons": 373
     },
     {
-        "Gift_Item": "Silk Scarf",
-        "Category": "Fashion",
-        "Occasion": "Mother's Day",
-        "Average_CO2_Footprint_kgCO2": 10
+        "State": "Texas",
+        "Year": "2021",
+        "Total_CO2_Emissions_metric_tons": 216
     },
     {
-        "Gift_Item": "Scented Candle Set",
-        "Category": "Home & Living",
-        "Occasion": "Housewarming",
-        "Average_CO2_Footprint_kgCO2": 25
+        "State": "California",
+        "Year": "2022",
+        "Total_CO2_Emissions_metric_tons": 359
     },
     {
-        "Gift_Item": "Indoor Plant",
-        "Category": "Home & Living",
-        "Occasion": "Thank You",
-        "Average_CO2_Footprint_kgCO2": 5
+        "State": "Texas",
+        "Year": "2022",
+        "Total_CO2_Emissions_metric_tons": 217
     },
     {
-        "Gift_Item": "Bestseller Novel",
-        "Category": "Books",
-        "Occasion": "Graduation",
-        "Average_CO2_Footprint_kgCO2": 10
+        "State": "California",
+        "Year": "2023",
+        "Total_CO2_Emissions_metric_tons": 367
     },
     {
-        "Gift_Item": "Cookbook",
-        "Category": "Books",
-        "Occasion": "Wedding",
-        "Average_CO2_Footprint_kgCO2": 15
+        "State": "Texas",
+        "Year": "2023",
+        "Total_CO2_Emissions_metric_tons": 218
     },
     {
-        "Gift_Item": "Skincare Set",
-        "Category": "Personal Care",
-        "Occasion": "Valentine's Day",
-        "Average_CO2_Footprint_kgCO2": 20
+        "State": "California",
+        "Year": "2024",
+        "Total_CO2_Emissions_metric_tons": 359
     },
     {
-        "Gift_Item": "Perfume",
-        "Category": "Personal Care",
-        "Occasion": "Father's Day",
-        "Average_CO2_Footprint_kgCO2": 18
+        "State": "Texas",
+        "Year": "2024",
+        "Total_CO2_Emissions_metric_tons": 199
     }
 ]
