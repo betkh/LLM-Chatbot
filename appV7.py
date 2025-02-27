@@ -580,6 +580,10 @@ def select_best_prompt(user_query):
     similarity_scores = cosine_similarity(
         query_embedding, pattern_embeddings)[0]
     best_match_idx = np.argmax(similarity_scores)
+
+    print("Cosine Similarity - Score: \n\n", similarity_scores)
+
+    print("Best match - index : \n\n", best_match_idx)
     return pattern_texts[best_match_idx]  # Return best-matching prompt
 
 
@@ -852,6 +856,9 @@ def get_chat_response(input_text, model_name, api_url):
                 try:
                     json_data = json.loads(line)
                     token = json_data.get("message", {}).get("content", "")
+
+                    print("\n\nOUTPUT TOKENS \n\n")
+                    print(token)
 
                     if "<think>" in token:
                         in_think_block = True
