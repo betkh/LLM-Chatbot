@@ -1,6 +1,6 @@
 [
     {
-        "User": "texas vs Cali for co2 emission",
-        "Bot": "\n\n```json\n[\n    {\"State\": \"California\", \"Year\": \"2020\", \"Total_CO2_Emissions_metric_tons\": 395},\n    {\"State\": \"Texas\", \"Year\": \"2020\", \"Total_CO2_Emissions_metric_tons\": 213},\n    {\"State\": \"California\", \"Year\": \"2021\", \"Total_CO2_Emissions_metric_tons\": 373},\n    {\"State\": \"Texas\", \"Year\": \"2021\", \"Total_CO2_Emissions_metric_tons\": 216},\n    {\"State\": \"California\", \"Year\": \"2022\", \"Total_CO2_Emissions_metric_tons\": 359},\n    {\"State\": \"Texas\", \"Year\": \"2022\", \"Total_CO2_Emissions_metric_tons\": 217},\n    {\"State\": \"California\", \"Year\": \"2023\", \"Total_CO2_Emissions_metric_tons\": 367},\n    {\"State\": \"Texas\", \"Year\": \"2023\", \"Total_CO2_Emissions_metric_tons\": 218},\n    {\"State\": \"California\", \"Year\": \"2024\", \"Total_CO2_Emissions_metric_tons\": 359},\n    {\"State\": \"Texas\", \"Year\": \"2024\", \"Total_CO2_Emissions_metric_tons\": 199}\n]\n```"
+        "User": "sedan vs suv",
+        "Bot": "\n\n```json\n[\n    {\"Car_Category\": \"Sedan\", \"Carbon_Footprint_kgCO2_per_Mile\": 6},\n    {\"Car_Category\": \"SUV\", \"Carbon_Footprint_kgCO2_per_Mile\": 11.5}\n]\n```"
     }
 ]

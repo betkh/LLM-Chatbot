@@ -1,4 +1,5 @@
 import matplotlib.pyplot as plt
+import io
 
 
 def generate_co2_chart(data):

@@ -1,52 +1,10 @@
 [
     {
-        "State": "California",
-        "Year": "2020",
-        "Total_CO2_Emissions_metric_tons": 395
+        "Car_Category": "Sedan",
+        "Carbon_Footprint_kgCO2_per_Mile": 6
     },
     {
-        "State": "Texas",
-        "Year": "2020",
-        "Total_CO2_Emissions_metric_tons": 213
-    },
-    {
-        "State": "California",
-        "Year": "2021",
-        "Total_CO2_Emissions_metric_tons": 373
-    },
-    {
-        "State": "Texas",
-        "Year": "2021",
-        "Total_CO2_Emissions_metric_tons": 216
-    },
-    {
-        "State": "California",
-        "Year": "2022",
-        "Total_CO2_Emissions_metric_tons": 359
-    },
-    {
-        "State": "Texas",
-        "Year": "2022",
-        "Total_CO2_Emissions_metric_tons": 217
-    },
-    {
-        "State": "California",
-        "Year": "2023",
-        "Total_CO2_Emissions_metric_tons": 367
-    },
-    {
-        "State": "Texas",
-        "Year": "2023",
-        "Total_CO2_Emissions_metric_tons": 218
-    },
-    {
-        "State": "California",
-        "Year": "2024",
-        "Total_CO2_Emissions_metric_tons": 359
-    },
-    {
-        "State": "Texas",
-        "Year": "2024",
-        "Total_CO2_Emissions_metric_tons": 199
+        "Car_Category": "SUV",
+        "Carbon_Footprint_kgCO2_per_Mile": 11.5
     }
 ]
