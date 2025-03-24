@@ -82,16 +82,3 @@
    ```
    http://127.0.0.1:5000
    ```
-
-### App challanges
-
-- live rendering of outputs to front end (frontend problems)
-- some models are rellay heavy, but accurate (smller models are less acurate)
-- formatting of outputs e.g tables, codes, images
-- performing quantitative analysis and visualizations & rendiering those to front end
-
-### some goals
-
-- add a drop down menu to select model
-- format and clean generated quntitatve data to perform visualizations
-- steering LLM output using feedback mechanism
