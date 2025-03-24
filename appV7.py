@@ -114,10 +114,10 @@ app = Flask(__name__)
 
 # Set up the base URL for the local Ollama API
 OLLAMA_API = "http://localhost:11434/api/chat"
-MODEL_NAME = "deepseek-r1"
-# MODEL_NAME = "mistral"
-# MODEL_NAME = "deepseek-r1"
-# MODEL_NAME = "deepseek-r1:32b"
+
+MODEL_NAME = "llama2"
+# MODEL_NAME = "llama3.3"
+
 
 # Define file paths
 CHAT_HISTORY_FILE = "chat_history.json"

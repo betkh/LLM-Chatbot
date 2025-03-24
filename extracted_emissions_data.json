@@ -1,10 +1,10 @@
 [
     {
-        "Car_Category": "Sedan",
-        "Carbon_Footprint_kgCO2_per_Mile": 6
+        "Car_Type": "Sedan",
+        "Carbon_Footprint_kgCO2_per_Mile": 7
     },
     {
-        "Car_Category": "SUV",
-        "Carbon_Footprint_kgCO2_per_Mile": 11.5
+        "Car_Type": "Truck",
+        "Carbon_Footprint_kgCO2_per_Mile": 15
     }
 ]
