@@ -65,18 +65,6 @@
    ollama run llama3.2
    ```
 
-   e.g. to download `deepseek-r1` run:
-
-   ```
-   ollama run deepseek-r1
-   ```
-
-   To download model with specific size e.g. 14B parameters = 9.0GB here is the [link](https://ollama.com/library/deepseek-r1:14b)
-
-   ```
-   ollama run deepseek-r1:14b
-   ```
-
 5. Run the app
 
    ```
