@@ -19,8 +19,8 @@
 ### Sample Outputs
 
 <img width="100%" alt="demo.png" src="public/sample_outputs/op1.png">
-<img width="100%" alt="demo.png" src="public/sample_outputs/op2.png">
-<img width="100%" alt="demo.png" src="public/sample_outputs/op3.png">
+<!-- <img width="100%" alt="demo.png" src="public/sample_outputs/op2.png"> -->
+<!-- <img width="100%" alt="demo.png" src="public/sample_outputs/op3.png"> -->
 
 <!-- #### Output comparison from various models -->
 
