@@ -2,7 +2,7 @@
 
 ### Video Demo (click on the image)
 
-[Watch video Demo](https://www.youtube.com/watch?v=EgKAD9C_Hks)
+[Watch video Demo](https://youtu.be/4hpHecae9XY)
 
 ### Architecture
 
